@@ -20,8 +20,33 @@ Best Practices for writing Terraform files
 
 <img width="666" height="86" alt="image" src="https://github.com/user-attachments/assets/28b1e603-f468-4185-a461-80ab92f7c45d" />
 
+VPC Module
+-
 - Suppose we're writing aws vpc module, we can provide path of the module from documentation as its inbuilt and pass values to variables required to create VPC.
 
 <img width="1916" height="767" alt="image" src="https://github.com/user-attachments/assets/e8f3b998-97ab-4ce8-90d7-39ee20c18c02" />
 
 - Inside the module documentation, go to examples - complete to get reference of values required to write in as a code.
+
+- We can alsi use "random string" to ensure our resources names are unique giving length and suffix/prefix in the block.
+
+<img width="584" height="77" alt="image" src="https://github.com/user-attachments/assets/e687b704-2581-4b44-bf5a-c7d71bd010d3" />
+
+
+EKS Module
+-
+- Go to "Terraform aws eks module" documentation and in examples take "self managed node groups"
+- In this eks.tf file we define instance types for worker nodes, then desired state of instances like min,max and desired size of node group(max instances in one node).
+- "eks managed node group" creates auto scaling group.
+
+Security Groups
+-
+- Provide CIDR range, inbound/outbound traffic rules
+
+Variables
+-
+- Create variables.tf and define the things we need to variabalize
+
+Output
+-
+- Define output variables we need to print in console.
