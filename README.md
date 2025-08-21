@@ -50,3 +50,9 @@ Variables
 Output
 -
 - Define output variables we need to print in console.
+
+------------------------------------------------------------------------------------------
+
+Practical Implementation
+-
+- 
